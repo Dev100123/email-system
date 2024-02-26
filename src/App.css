@@ -139,7 +139,7 @@ body {
 
 /* FriendsList.css */
 .friends-list-container {
-  margin-top: 5%;
+  margin-top: 10%;
   display: flex; /* Set display to flex */
   flex-wrap: wrap; /* Allow wrapping */
   justify-content: space-between; /* Distribute space between items */
@@ -153,4 +153,18 @@ body {
   padding-top: 2%;
   padding-bottom: 2%;
   color: #666; /* Example text color */
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 41, 9); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
 }
