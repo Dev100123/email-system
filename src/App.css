@@ -137,15 +137,6 @@ body {
   }
 }
 
-/* FriendsList.css */
-.friends-list-container {
-  margin-top: 10%;
-  display: flex; /* Set display to flex */
-  flex-wrap: wrap; /* Allow wrapping */
-  justify-content: space-between; /* Distribute space between items */
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .footertext {
   display: flex; /* Enable flexbox layout */
   justify-content: center; /* Center content horizontally */

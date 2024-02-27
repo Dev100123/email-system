@@ -62,28 +62,34 @@ const friendsData = [
 ];
 
 const FriendsList = () => {
+  const cardStyle = {
+    maxWidth: "400px",
+    marginTop: "25%",
+    marginLeft: "20%",
+    marginRight: "10%",
+  };
+
   return (
-    <div className="friends-list-container">
+    <div className="row">
       {friendsData.map((friend, index) => (
-        <div className="card mb-1" style={{ maxWidth: "400px" }} key={index}>
-          <div className="row g-0 ">
-            <div className="col-md-4">
-              <img
-                src={friend.imageUrl}
-                className="img-fluid rounded-start"
-                alt="Friend"
-              />
-            </div>
-            <div className="col-md-8 border border-light-subtle">
-              <div
-                className="card-body bg-black"
-                style={{ width: "100%", height: "100%" }}
-              >
-                <h5 className="card-title text-white">{friend.name}</h5>
-                <p className="card-text text-white">{friend.field}</p>
-                <p className="card-text">
-                  <small className="text-white">{friend.email}</small>
-                </p>
+        <div className="col-md-6 mb-1" key={index}>
+          <div className="card bg-black" style={cardStyle}>
+            <div className="row g-0">
+              <div className="col-md-3">
+                <img
+                  src={friend.imageUrl}
+                  className="img-fluid rounded-start"
+                  alt="Friend"
+                />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body bg-black">
+                  <h5 className="card-title text-white">{friend.name}</h5>
+                  <p className="card-text text-white">{friend.field}</p>
+                  <p className="card-text">
+                    <small className="text-white">{friend.email}</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
