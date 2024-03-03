@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import logo from "./logo/University_Federico_II_Logo.svg.png";
+import video from "./logo/videos.mp4"; // Import the video file
 import image1 from "./logo/semanto.png";
 import image2 from "./logo/rajib.png";
 // UniversityLogo component
@@ -8,6 +9,16 @@ const UniversityLogo = () => {
   return (
     <div className="logo-container">
       <img src={logo} alt="University Logo" className="logo-image" />
+      {/* Video element */}
+      <video
+        src={video} // Use the imported video file
+        autoPlay
+        loop
+        muted
+        className="background-video" // Apply any necessary styling
+      ></video>
+
+      {/* University name */}
       <h1 className="university-name">
         Università degli Studi di Napoli Federico II
       </h1>
