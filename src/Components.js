@@ -65,7 +65,7 @@ const FriendsList = () => {
   const cardStyle = {
     maxWidth: "400px",
     marginTop: "25%",
-    marginLeft: "20%",
+    marginLeft: "16%",
     marginRight: "10%",
   };
 
@@ -78,7 +78,7 @@ const FriendsList = () => {
               <div className="col-md-3">
                 <img
                   src={friend.imageUrl}
-                  className="img-fluid rounded-start"
+                  className="img-fluid rounded-start hover-transform"
                   alt="Friend"
                 />
               </div>

@@ -94,25 +94,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.download-button-container {
-  text-align: center;
-}
-
-.download-button {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
+  background-color: #000203;
   border: none;
   border-radius: 8px;
   text-decoration: none;
@@ -121,7 +103,7 @@ body {
 }
 
 .download-button:hover {
-  background-color: #000000;
+  background-color: #364594;
   animation: celebrate 0.5s linear infinite;
 }
 
@@ -158,4 +140,13 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(219, 41, 9); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
+}
+
+.hover-transform {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.hover-transform:hover {
+  transform: scale(1.3);
 }
