@@ -61,13 +61,13 @@ const friendsData = [
   {
     name: "Semanto Mondal",
     field: "Data Science",
-    email: "s.mondal@studenti.unina.it",
+    email: "semanto.mondal@unina.it",
     imageUrl: image1,
   },
   {
     name: "Rajib Chandra Ghosh",
     field: "Data Science",
-    email: "r.chandraghosh@studenti.unina.it",
+    email: "rajib.chandraghosh@unina.it",
     imageUrl: image2,
   },
 ];
